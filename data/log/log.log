@@ -185,3 +185,5 @@ failed get storage
 [GIN] 2023/04/28 - 19:40:30 | 200 |      212.92µs |   205.215.30.78 | POST     "/api/fs/list"
 [GIN] 2023/04/28 - 19:40:32 | 200 |    8.554767ms |   205.215.30.78 | POST     "/api/fs/list"
 [GIN] 2023/04/28 - 19:41:17 | 200 |      206.64µs |   205.215.30.78 | POST     "/api/fs/list"
+[33mWARN[0m[2023-04-28 20:05:44] not enable search                            
+[33mWARN[0m[2023-04-28 20:05:44] not enable search                            
