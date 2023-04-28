@@ -1,0 +1,126 @@
+[33mWARN[0m[2023-04-28 18:58:41] not enable search                            
+[33mWARN[0m[2023-04-28 18:58:41] not enable search                            
+[GIN] 2023/04/28 - 18:59:17 | 200 |      154.06µs |   205.215.30.78 | GET      "/"
+[GIN] 2023/04/28 - 18:59:17 | 200 |     5.45814ms |   205.215.30.78 | GET      "/assets/index.15d8d646.css"
+[GIN] 2023/04/28 - 18:59:17 | 200 |     8.06595ms |   205.215.30.78 | GET      "/assets/index.9cf5fe42.js"
+[GIN] 2023/04/28 - 18:59:18 | 200 |     1.20597ms |   205.215.30.78 | GET      "/assets/entry.643c67d6.js"
+[GIN] 2023/04/28 - 18:59:18 | 200 |      690.87µs |   205.215.30.78 | GET      "/api/public/settings"
+[GIN] 2023/04/28 - 18:59:18 | 200 |       94.43µs |   205.215.30.78 | GET      "/api/me"
+[GIN] 2023/04/28 - 18:59:18 | 200 |      153.28µs |   205.215.30.78 | GET      "/assets/index.f1d7f388.js"
+[GIN] 2023/04/28 - 18:59:18 | 200 |      206.65µs |   205.215.30.78 | GET      "/assets/index.8de755ab.js"
+[GIN] 2023/04/28 - 18:59:43 | 200 |       578.3µs |   205.215.30.78 | POST     "/api/auth/login"
+[GIN] 2023/04/28 - 18:59:50 | 200 |      235.08µs |   205.215.30.78 | POST     "/api/auth/login"
+[GIN] 2023/04/28 - 18:59:50 | 200 |      156.39µs |   205.215.30.78 | GET      "/api/me"
+[GIN] 2023/04/28 - 18:59:50 | 200 |      68.671µs |   205.215.30.78 | GET      "/assets/api.69a42d7e.js"
+[GIN] 2023/04/28 - 18:59:50 | 200 |     1.50928ms |   205.215.30.78 | GET      "/assets/Markdown.825322e6.js"
+[GIN] 2023/04/28 - 18:59:50 | 200 |       58.62µs |   205.215.30.78 | GET      "/assets/useUtil.b9ac3289.js"
+[GIN] 2023/04/28 - 18:59:50 | 200 |      48.631µs |   205.215.30.78 | GET      "/assets/index.12e5e707.js"
+[GIN] 2023/04/28 - 18:59:50 | 200 |       53.04µs |   205.215.30.78 | GET      "/assets/FolderTree.16e323cc.js"
+[GIN] 2023/04/28 - 18:59:50 | 200 |       75.46µs |   205.215.30.78 | GET      "/assets/index.e3f939d4.js"
+[GIN] 2023/04/28 - 18:59:50 | 200 |    2.880579ms |   205.215.30.78 | GET      "/assets/Layout.bbb89bd6.js"
+[31mERRO[0m[2023-04-28 18:59:50] failed list /: please add a storage first.
+github.com/alist-org/alist/v3/internal/op.GetStorageAndActualPath
+	/home/runner/work/alist/alist/internal/op/path.go:19
+github.com/alist-org/alist/v3/internal/fs.list
+	/home/runner/work/alist/alist/internal/fs/list.go:18
+github.com/alist-org/alist/v3/internal/fs.List
+	/home/runner/work/alist/alist/internal/fs/fs.go:22
+github.com/alist-org/alist/v3/server/handles.FsGet
+	/home/runner/work/alist/alist/server/handles/fsread.go:300
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/alist-org/alist/v3/server/middlewares.Auth
+	/home/runner/work/alist/alist/server/middlewares/auth.go:67
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/alist-org/alist/v3/server/middlewares.StoragesLoaded
+	/home/runner/work/alist/alist/server/middlewares/check.go:14
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/opt/hostedtoolcache/go/1.20.3/x64/src/net/http/server.go:2936
+net/http.(*conn).serve
+	/opt/hostedtoolcache/go/1.20.3/x64/src/net/http/server.go:1995
+runtime.goexit
+	/opt/hostedtoolcache/go/1.20.3/x64/src/runtime/asm_amd64.s:1598
+failed get storage 
+[GIN] 2023/04/28 - 18:59:50 | 200 |      677.63µs |   205.215.30.78 | POST     "/api/fs/get"
+[31mERRO[0m[2023-04-28 18:59:50] failed list /: please add a storage first.
+github.com/alist-org/alist/v3/internal/op.GetStorageAndActualPath
+	/home/runner/work/alist/alist/internal/op/path.go:19
+github.com/alist-org/alist/v3/internal/fs.list
+	/home/runner/work/alist/alist/internal/fs/list.go:18
+github.com/alist-org/alist/v3/internal/fs.List
+	/home/runner/work/alist/alist/internal/fs/fs.go:22
+github.com/alist-org/alist/v3/server/handles.FsList
+	/home/runner/work/alist/alist/server/handles/fsread.go:82
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/alist-org/alist/v3/server/middlewares.Auth
+	/home/runner/work/alist/alist/server/middlewares/auth.go:67
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/alist-org/alist/v3/server/middlewares.StoragesLoaded
+	/home/runner/work/alist/alist/server/middlewares/check.go:14
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.CustomRecoveryWithWriter.func1
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/recovery.go:102
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.LoggerWithConfig.func1
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/logger.go:240
+github.com/gin-gonic/gin.(*Context).Next
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/context.go:174
+github.com/gin-gonic/gin.(*Engine).handleHTTPRequest
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:620
+github.com/gin-gonic/gin.(*Engine).ServeHTTP
+	/home/runner/go/pkg/mod/github.com/gin-gonic/gin@v1.9.0/gin.go:576
+net/http.serverHandler.ServeHTTP
+	/opt/hostedtoolcache/go/1.20.3/x64/src/net/http/server.go:2936
+net/http.(*conn).serve
+	/opt/hostedtoolcache/go/1.20.3/x64/src/net/http/server.go:1995
+runtime.goexit
+	/opt/hostedtoolcache/go/1.20.3/x64/src/runtime/asm_amd64.s:1598
+failed get storage 
+[GIN] 2023/04/28 - 18:59:50 | 200 |      478.03µs |   205.215.30.78 | POST     "/api/fs/list"
+[GIN] 2023/04/28 - 18:59:53 | 200 |      101.09µs |   205.215.30.78 | GET      "/api/me"
+[GIN] 2023/04/28 - 18:59:53 | 200 |         229µs |   205.215.30.78 | GET      "/assets/index.0e3b638b.js"
+[GIN] 2023/04/28 - 18:59:54 | 200 |      66.729µs |   205.215.30.78 | GET      "/assets/Profile.a4e7b859.js"
+[GIN] 2023/04/28 - 19:00:05 | 200 |      540.51µs |   205.215.30.78 | POST     "/api/me/update"
+[GIN] 2023/04/28 - 19:00:07 | 200 |      425.15µs |   205.215.30.78 | POST     "/api/auth/login"
+[GIN] 2023/04/28 - 19:00:07 | 200 |      76.251µs |   205.215.30.78 | GET      "/api/me"
+[GIN] 2023/04/28 - 19:00:09 | 200 |       75.42µs |   205.215.30.78 | GET      "/assets/Storages.35c3392a.js"
+[GIN] 2023/04/28 - 19:00:09 | 200 |       20.72µs |   205.215.30.78 | GET      "/assets/DeletePopover.941c3ce6.js"
+[GIN] 2023/04/28 - 19:00:10 | 200 |       166.5µs |   205.215.30.78 | GET      "/api/admin/driver/names"
+[GIN] 2023/04/28 - 19:00:10 | 200 |      650.98µs |   205.215.30.78 | GET      "/api/admin/storage/list"
+[GIN] 2023/04/28 - 19:00:12 | 200 |     118.011µs |   205.215.30.78 | GET      "/assets/AddOrEdit.5695176b.js"
+[GIN] 2023/04/28 - 19:00:12 | 200 |      59.349µs |   205.215.30.78 | GET      "/assets/item_type.be442da4.js"
+[GIN] 2023/04/28 - 19:00:12 | 200 |        21.5µs |   205.215.30.78 | GET      "/assets/ResponsiveGrid.2bae365f.js"
+[GIN] 2023/04/28 - 19:00:12 | 200 |     1.58705ms |   205.215.30.78 | GET      "/api/admin/driver/list"
+[GIN] 2023/04/28 - 19:01:25 | 200 |  469.291657ms |   205.215.30.78 | POST     "/api/admin/storage/create"
+[GIN] 2023/04/28 - 19:01:25 | 200 |       84.62µs |   205.215.30.78 | GET      "/api/admin/driver/names"
+[GIN] 2023/04/28 - 19:01:25 | 200 |      484.74µs |   205.215.30.78 | GET      "/api/admin/storage/list"
+[GIN] 2023/04/28 - 19:01:28 | 200 |      84.611µs |   205.215.30.78 | GET      "/"
+[GIN] 2023/04/28 - 19:01:29 | 200 |       93.68µs |   205.215.30.78 | GET      "/api/public/settings"
+[GIN] 2023/04/28 - 19:01:29 | 200 |       94.56µs |   205.215.30.78 | GET      "/api/me"
+[GIN] 2023/04/28 - 19:01:29 | 200 |      208.68µs |   205.215.30.78 | POST     "/api/fs/get"
+[GIN] 2023/04/28 - 19:01:29 | 200 |      434.58µs |   205.215.30.78 | POST     "/api/fs/list"
+[GIN] 2023/04/28 - 19:01:29 | 200 |       156.8µs |   205.215.30.78 | GET      "/assets/Folder.b511ba9e.css"
+[GIN] 2023/04/28 - 19:01:29 | 200 |        73.6µs |   205.215.30.78 | GET      "/assets/icon.5a5c4711.js"
+[GIN] 2023/04/28 - 19:01:29 | 200 |      383.21µs |   205.215.30.78 | GET      "/assets/Folder.805f8875.js"
+[GIN] 2023/04/28 - 19:01:29 | 200 |       81.55µs |   205.215.30.78 | GET      "/assets/Paginator.a9c8692a.js"
+[GIN] 2023/04/28 - 19:01:30 | 200 |       60.24µs |   205.215.30.78 | GET      "/assets/List.b1b044f6.js"
+[GIN] 2023/04/28 - 19:01:31 | 200 |  313.795917ms |   205.215.30.78 | POST     "/api/fs/list"
